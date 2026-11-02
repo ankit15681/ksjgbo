@@ -14,4 +14,4 @@ The Docker image builds the React frontend and serves it using Python 3.12 as a 
 
 The demo video has been recorded and edited to 9:35 (customer overview 4:57, technical overview 4:40).
 
-Not yet verified: an actual Vercel/Heroku deployment, public repository access, or submission-link access from incognito. No claim of live deployment or submission is made.
+The Vercel deployment at https://ksjgbo.vercel.app was checked without signing in: every API endpoint returns 200 (a February date correctly returns 422), January metrics match the local results (MAE 2,038.9 MW, bias −1,747.9 MW), January 31 maps to February 1 delivery, and the decision, accuracy and experimental views load without browser errors. The public repository opens without signing in.

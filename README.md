@@ -2,7 +2,7 @@
 
 A day-ahead wind forecast dashboard for a GB electricity procurement team. Replay January 2026 decisions using only forecasts published before a configurable cutoff, then compare them with actual generation.
 
-- **Live app:** _Vercel URL to be added_
+- **Live app:** https://ksjgbo.vercel.app (API docs at [/docs](https://ksjgbo.vercel.app/docs))
 - **Demo video:** _unlisted YouTube URL to be added_
 
 ## Start with Docker
@@ -146,11 +146,13 @@ docker run --rm wind-desk:local python -m pytest backend/tests -q -p no:cachepro
 
 ## Deployment and submission
 
-The intended deployment is Vercel, with a Vite static build and a Python FastAPI function. Keep the repository root as the project root so `vercel.json`, `api/`, `backend/`, `data/` and `requirements.txt` are included. Validate `/api/health`, all three views and CSV exports after deployment. The deployment configuration has not yet been exercised on Vercel.
+The app is deployed on Vercel at https://ksjgbo.vercel.app. Vercel builds the Vite frontend as static files and runs the FastAPI app (`api/index.py`) with its FastAPI preset, which routes `/api/*` and `/docs` straight to the app. Keep the repository root as the project root so `vercel.json`, `api/`, `backend/`, `data/` and `requirements.txt` are included; `.vercelignore` keeps local environments and video files out of the upload.
 
-The Docker image is also compatible with a host that supplies `PORT`, including a Heroku container deployment. No deployment has been created automatically.
+```sh
+npx vercel deploy --prod
+```
 
-After deploying, add the app and video links at the top of this README and open each submitted link in an incognito window to confirm public access.
+After deploying, check `/api/health`, all views and both CSV exports. The Docker image also runs on any host that supplies `PORT`, such as a Heroku container deployment.
 
 ## AI assistance
 
