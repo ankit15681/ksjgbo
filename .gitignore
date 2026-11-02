@@ -4,8 +4,10 @@ __pycache__/
 node_modules/
 frontend/dist/
 .env
+.vercel
 .DS_Store
 *.tsbuildinfo
 # Demo video production (the video is submitted via YouTube, not the repo)
 outputs/
 scripts/video-*
+.env*
