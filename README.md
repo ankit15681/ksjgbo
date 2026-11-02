@@ -3,7 +3,7 @@
 A day-ahead wind forecast dashboard for a GB electricity procurement team. Replay January 2026 decisions using only forecasts published before a configurable cutoff, then compare them with actual generation.
 
 - **Live app:** https://ksjgbo.vercel.app (API docs at [/docs](https://ksjgbo.vercel.app/docs))
-- **Demo video:** _unlisted YouTube URL to be added_
+- **Demo video:** https://youtu.be/uomMOUqcsCI (9:36, unlisted; part 1 customer walkthrough, part 2 technical review from 4:57)
 
 ## Start with Docker
 
