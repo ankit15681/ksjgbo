@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.pytest_cache/
+node_modules/
+frontend/dist/
+.env
+.DS_Store
+*.tsbuildinfo
+# Demo video production (the video is submitted via YouTube, not the repo)
+outputs/
+scripts/video-*
